@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positions in css</title>
+    <style>
+        .container{
+            border: 2px solid blue;
+            background-color: mediumspringgreen;
+            padding: 5px;
+            height:5000px;
+        }
+        /* positions are absolute,static(by default),relative ,fixed,sticky*/
+        .box{
+            border:2px solid gainsboro;
+            width: 200px;
+            height: 200px;
+            margin: 2px;
+            display: inline-block;
+        }
+        #box3{
+            /* we can use top,bottom left,right properties relative to its original position with relative */
+            position: relative;
+            top:40px;
+            left:40px;
+        }
+        #box2{
+            /* with absolute position ,we give positions relative to its parent */
+            position: absolute;
+            top:40px;
+            left:40px;
+        }
+        #box1{
+            /* position static is normal position used by dom */
+            position: static;
+        }
+        #box4{
+            /* fixed position-positions relative to the browser window */
+            position:fixed;
+            right:4px;
+            bottom:2px;
+        }
+        #box5{
+             /* Sticky position-positions relative to the parent  */
+            position:sticky;
+            top:3px
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">1</div>
+    <div class="box" id="box2">2</div>
+    <div class="box" id="box3">3</div>
+    <div class="box" id="box4">4.Chat with us</div>
+    <div class="box" id="box5">5</div>
+    </div>
+</body>
+</html>

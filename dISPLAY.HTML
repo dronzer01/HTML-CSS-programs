@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DISPLAY PROPERTY</title>
+    <style>
+        header{
+            border: 2px solid purple;
+            margin:auto;
+            width:1000px;
+            box-sizing: border-box;
+        }
+        img{
+            margin:auto;
+            display:block;
+            width:50px;
+        }
+        h3{
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin: 0;
+            text-align: center;
+        }
+        .box{
+            border: 2px solid plum;
+            margin: 1px;
+            background-color: azure;
+            padding: 23px;
+            display: inline-block;
+            width: 30%;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 1200px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="top">
+            <img src="data:image/jpeg;base64,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"
+                 alt="Error in image uploading">
+            <h3>
+                Welcome to Meenakshi blog
+            </h3>
+    </header>
+    <div class="container">
+        <div class="box">
+            <h4 class="heading">Heading</h4>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio est quisquam beatae quod sequi laboriosam eveniet dolorem saepe animi in. Iusto incidunt minus eos necessitatibus? Quod explicabo cumque fugit ad aperiam at illo doloremque temporibus laborum! Aperiam perferendis distinctio quam!
+            </p>
+        </div>
+        <div class="box">
+            <h4 class="heading">Heading</h4>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio est quisquam beatae quod sequi laboriosam eveniet dolorem saepe animi in. Iusto incidunt minus eos necessitatibus? Quod explicabo cumque fugit ad aperiam at illo doloremque temporibus laborum! Aperiam perferendis distinctio quam!
+            </p>
+        </div>
+        <div class="box">
+            <h4 class="heading">Heading</h4>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio est quisquam beatae quod sequi laboriosam eveniet dolorem saepe animi in. Iusto incidunt minus eos necessitatibus? Quod explicabo cumque fugit ad aperiam at illo doloremque temporibus laborum! Aperiam perferendis distinctio quam!
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
