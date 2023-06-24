@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudoselectors and more designing</title>
+    <style>
+        .container{
+            border: 2px solid purple;
+            background-color: rgb(235, 219, 251);
+            padding: 34px ;
+            margin: 34px auto;
+            border-radius: 20px;
+            width: 500px;
+
+        }
+        a{
+            text-decoration: none;
+            color: black;
+            /*to remove line below readmore*/
+
+        }
+        a:hover{
+            color: #ffb0b0;
+            background-color: azure;
+        }
+        a:visited{
+            color: blueviolet;
+        }
+        a:active{
+            color: aquamarine;
+        }
+        .btn{
+            background-color: whitesmoke;
+            padding: 6px;
+            border: none;
+            cursor: pointer;
+            font-size: 15px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="cont1">
+        <h3>This is my heading</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, iure dolor. Beatae molestias doloribus fuga expedita recusandae doloremque assumenda, quasi itaque quisquam nihil dolor. Aspernatur iure doloribus quod iste labore in eaque, eius quia qui, perferendis neque suscipit vel voluptatibus?</p>
+        <a href="https://www.google.com" class="btn">Read more</a>
+        <button class ="btn">Contact us</button>
+    </div>
+</body>
+</html>

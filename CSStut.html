@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- External CSS -->
+     <link rel="stylesheet"  href="tut1.css">
+    <title>CSS Tutorial</title>
+    <!-- Internal CSS  -->
+    <style>
+        p.p1{
+            color: blueviolet;
+            /* Inline css has more precedence than internal and external css, to give more precedence among internal and external css we can use !important.  */
+        }
+    </style>
+</head>
+<body>
+    <h1>This is css tutorial</h1>
+    <!-- Inline CSS -->
+    <p style="color: aqua; background-color: cornsilk;">
+        This tutorial will teach you everything about css.
+    </p>
+    <p class="p1">
+        u can see inline css effect here
+    </p>
+    <p class="p2">
+        u can see external css effect here
+    </p>
+</body>
+</html>
