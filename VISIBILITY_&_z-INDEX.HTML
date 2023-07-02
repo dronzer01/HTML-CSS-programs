@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VISIBILITY & Z-INDEX</title>
+    <style>
+        /* z-index determines the visibility of the element when the elements overlaps,but it works only for positioned elements that is except static position it works for all*/
+        .box{
+            width: 170px;
+            height: 170px;
+            border: 2px solid aquamarine;
+            margin: 3px;
+        }
+        #box1{
+            
+            background-color: azure;
+            
+        }
+        #box2{
+            /* default value of visibility is visible 
+            hidden hides the elements but reserves its space*/
+            /* visibility: hidden; */
+            position: relative;
+            top: 14px;
+            background-color: plum;
+           
+        }
+        #box3{
+            /*to remove the space also we use display-none*/
+            /* visibility: hidden;
+            display: none; */
+            position: relative;
+            top: 40px;
+            background-color: gainsboro;
+        }
+        #box4{
+            background-color:seashell;
+        }
+    </style>
+</head>
+<body>
+    <!-- DIV.BOX#BOX$*4-> TO GIVE DIFFERENT IDS  -->
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+</body>
+</html>

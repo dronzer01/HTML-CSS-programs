@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox tutorial</title>
+    <style>
+        .container{
+            height:350px;
+            width:100%;
+            border:2px solid blue;
+            /* Initialize the container as a flex box */
+            display:flex;
+
+            /* flex properties for flex container */
+            /* by default flex-direction is row*/
+             flex-direction: row;  
+            flex-direction: column;
+            /* flex-direction written later will overwrite the one written before  */
+            flex-direction: row-reverse;
+            flex-direction: column-reverse;
+            /* flex wrap is for wrapping the container to set view in different devices */
+            flex-wrap: wrap;
+            flex-wrap: wrap-reverse;
+            /* to do flex in one line */
+            flex-flow: row-reverse wrap;
+            justify-content: center;
+            justify-content: space-around;
+            justify-content: space-between;
+            justify-content: space-evenly;
+            /* Align properties (it also override  codes written before*/
+            align-items: center;
+            align-items: flex-end;
+            align-items: flex-start;
+            align-items: stretch;
+            flex-direction: row;
+        }
+        .item{
+            width:100px;
+            height: 200px;
+            background-color: tomato;
+            border:2px solid gold;
+            margin: 3px;
+            padding: 3px;
+
+
+        }
+        #item1{
+            /* higher the order later it shows in the container  */
+            order: 2;
+            /* flex takes given amount of more space than others  */
+            /* flex-grow: 3;
+            flex-grow: 3; */
+        }
+        #item2{
+            order: 40;
+            /* flex-grow: 2; */
+            /* when flex direction is set to row,flex basis will control width */
+            /* when flex direction is set to column,flex basis will control height */
+            flex-basis: 120px;
+        }
+        #item3{
+            order: 20;
+            /* flex-grow: 4;
+            flex-shrink: 1;  */
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident perspiciatis nulla neque deserunt alias placeat esse non sapiente enim soluta!</h1>
+    <div class="container">
+        <div class="item" id="item1">1st box</div>
+        <div class="item" id="item2">2nd box</div>
+        <div class="item" id="item3">3rd box</div>
+        <div class="item" id="item4">4rth box</div>
+        <div class="item" id="item5">5th box</div>
+        <div class="item" id="item6">6th box</div>
+    </div>
+</body>
+</html>
