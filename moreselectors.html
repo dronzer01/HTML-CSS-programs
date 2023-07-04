@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <titleMore on selectors</title>
+    <style>
+        h1{
+            color: azure;
+            background-color: black;
+            font-weight: bolder;
+            text-align: center;
+        }
+        /* for p in all div  */
+        div p{
+            color: blueviolet;
+            font-weight: bold;
+            background-color: rgb(247, 173, 173);
+        }
+        /* for p in li in div  */
+        div li p{
+            color: chartreuse;
+            background-color: rgb(224, 255, 255);
+        }
+        /* for all p which are direct child of div we use >  */
+        div > p{
+            color: darkslateblue;
+            background-color: plum;
+        }
+        /* for elements whose previous element is div we use +   */
+        div + p{
+            color: crimson;
+            background-color: oldlace;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lorem ipsum dolor sit amet</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li class="item"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima corporis consequatur ea voluptatem iste in aliquid, sunt voluptatum.</p></li>
+                <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            </ul>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus, expedita?</p>
+        </div>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus, expedita?</p>
+    </div>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus, expedita?</p>
+</body>
+</html>
