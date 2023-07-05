@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframes and Animations</title>
+    <style>
+        .container{
+            background-color: rgb(0, 136, 255);
+            justify-content: center;
+        }
+        .box{
+            background-color: rgb(255, 176, 176);
+            width: 250px;
+            height: 250px;
+            position: relative;
+            /* animation ka naam */
+            animation-name: me2;
+            /* kitni der tak chalega */
+            animation-duration:2s; 
+            /* kitne baar chalega  */
+            /* animation-iteration-count: infinite; */
+            animation-iteration-count: 1;
+            /* animation-fill-mode: forwards; */
+            /* animation-fill-mode: alternate;animation-timing-function: ease-in; */
+            /* animation-timing-function: ease-out; */
+           /* animation-timing-function: ease-in-out;
+            animation-delay: 5s;*/
+            /* animation-direction: alternate; */
+            /* animation-direction: reverse; */
+            /* these properties can be set using this shorthand  */
+            /* animation: animation-name animation duration animation-timing-function animation-delay animation-iteration-count animation-fill-mode; */
+            animation: me2 5s ease-in 1s 12 backwards;
+        }
+        
+        /* creating animation  */
+        @keyframes me1{
+            from{
+                width: 200px;
+            }
+            to{
+                width: 800px;
+            }
+        }
+        @keyframes me2{
+            /* on 0% completion  */
+            0%{
+top: 0px;
+left: 0px;
+            }
+            /* on 25% completion */
+            25%{
+                top: 150px;
+left: 0px;
+            }
+            /* on 75% completion */
+            75%{
+                top: 150px;
+left: 150px;
+            }
+            /* on 100% completion */
+            100%{
+                top: 150px;
+left: 0px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container"><div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div></div>
+</body>
+</html>

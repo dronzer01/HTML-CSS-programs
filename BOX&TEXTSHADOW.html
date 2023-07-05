@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box and TExt Shadow</title>
+    <style>
+        .container {
+            display: flex;
+            border: 2px solid blue;
+        }
+
+        .card {
+            /* border: 2px solid blue; */
+            padding: 23px 12px;
+            margin: 23px 12px;
+            background-color: beige;
+            /* box-shadow: x, y ,blur, spread radius */
+            /* box-shadow: 10px 13px greenyellow; */
+            /* box-shadow: -10px -13px greenyellow; */
+            /* box-shadow: 7px 5px 10px blueviolet; */
+            /* box-shadow: -7px -5px 10px blueviolet; */
+            /* box-shadow: 7px 5px 10px 34px blueviolet; */
+            /* box-shadow: 7px 5px 10px 34px rgba(255, 83, 83 ,0.5); */
+            /* to get shadow inside box we use inset  */
+            /* box-shadow: inset 3px 5px navy; */
+            /* for multiple shadows  */
+            box-shadow: 3px 5px orangered, 4px 6px hotpink, 6px 8px royalblue, 8px 10px violet;
+        }
+
+        /* shadow under text  */
+        .card h2 {
+            /* text-shadow: 3px 4px  rgb(171, 171, 171); */
+            /* text-shadow: 3px 4px 2px rgb(171, 171, 171); */
+            text-shadow: -3px -4px 2px rgb(171, 171, 171);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card" id="card1">
+            <h2>card1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore minus at maxime repudiandae dicta atque
+                veniam quos soluta deleniti error, et nulla. Aperiam voluptate enim soluta voluptatibus id illo
+                consequatur, quibusdam temporibus et pariatur.</p>
+        </div>
+        <div class="card" id="card2">
+            <h2>card2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore minus at maxime repudiandae dicta atque
+                veniam quos soluta deleniti error, et nulla. Aperiam voluptate enim soluta voluptatibus id illo
+                consequatur, quibusdam temporibus et pariatur.</p>
+        </div>
+        <div class="card" id="card3">
+            <h2>card3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore minus at maxime repudiandae dicta atque
+                veniam quos soluta deleniti error, et nulla. Aperiam voluptate enim soluta voluptatibus id illo
+                consequatur, quibusdam temporibus et pariatur.</p>
+        </div>
+        <div class="card" id="card4">
+            <h2>card4</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore minus at maxime repudiandae dicta atque
+                veniam quos soluta deleniti error, et nulla. Aperiam voluptate enim soluta voluptatibus id illo
+                consequatur, quibusdam temporibus et pariatur.</p>
+        </div>
+    </div>
+</body>
+
+</html>
