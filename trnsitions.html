@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transitions in CSS</title>
+    <style>
+        #box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+            width: 200px;
+            background-color: cornflowerblue;
+            transition-property: background-color;
+            transition-duration: 2s;
+            /* transition-timing-function: ease-in; */
+            /* transition-timing-function: ease-in-out; */
+            transition-timing-function: ease-out;
+            transition-delay: 2s;
+            /* shorthand property  */
+            /* transition: bg-color transition-duration transition-timing-function transition-delay;  */
+            transition:background-color 2s ease-in-out 0.5s;
+        }
+        #box:hover{
+            background-color: rgb(236, 43, 201);
+            height: 300px;
+            width: 300px;
+            border-radius: 45px;
+        }
+    </style>
+</head>
+<body>
+    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae ad obcaecati delectus dolore odit ipsam quia atque quas facere iure asperiores perferendis sunt animi voluptate quod provident tenetur, quidem commodi inventore quo eius quos.</h3>
+    <div class="container">
+        <div id="box">
+            Lorem ipsum dolor sit amet consectetur.
+        </div>
+    </div>
+</body>
+</html>
